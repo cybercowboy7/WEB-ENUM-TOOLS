@@ -1,0 +1,7 @@
+Banner Grabbing / Web Server Headers:
+
+- Utilize cURL to retrieve server header information via cli.
+
+- curl -IL https://www.inlanefreight.com
+
+- Also utilize EyeWitness to take screenshots of target web applications fingerprint them and ID possible default creds: https://github.com/RedSiege/EyeWitnes

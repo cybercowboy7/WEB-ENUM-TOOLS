@@ -1,0 +1,17 @@
+- Find hidden files or directories on the webserver that are not intended for public access.
+- Can utilize https://github.com/ffuf/ffuf or https://github.com/OJ/gobuster for directory enumeration
+
+- gobuster dir -u http://10.10.10.121/ -w /usr/share/seclists/Discover/Web-Content/common.txt
+- Pay attention to HTTP status codes to see any success or unsuccess: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+DNS Subdomain Enumeration:
+
+- Download the SecLists GitHub repo: https://github.com/danielmiessler/SecLists
+  git clone https://github.com/danielmiessler/SecLists
+  sudo apt install seclists -y
+
+- Add DNS server 1.1.1.1 (cloudflare) to the /etc/resolv.conf file
+
+- gobuster dns -d inlanefreight.com -w /usr/share/SecLists/Discover/DNS/namelist.txt
+
+https://academy.hackthebox.com/module/details/54 : great module for fuzzing and web enumeration

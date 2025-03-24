@@ -1,0 +1,8 @@
+Whatweb:
+
+- CLI tool Whatweb
+
+- whatweb 10.10.10.121
+  - Extracts version of web servers, supporting frameworks, and applications
+
+- whatweb --no-errors 10.10.10.0/24

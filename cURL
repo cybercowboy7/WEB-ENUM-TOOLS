@@ -4,4 +4,7 @@ Banner Grabbing / Web Server Headers:
 
 - curl -IL https://www.inlanefreight.com
 
+- curl -T myfile.txt https://example.com/upload.php
+  - Uploads file to web page
+
 - Also utilize EyeWitness to take screenshots of target web applications fingerprint them and ID possible default creds: https://github.com/RedSiege/EyeWitnes
